@@ -18,6 +18,8 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 - `css/creative.css`: the theme, with site-specific additions appended at the bottom (hero overlay, product cards, FAQ, contact map, footer). The accent color `#f05f40` is hard-coded throughout. The hero background is `img/header.jpg`, set here, not in the HTML.
 - `js/creative.js`: smooth scroll, Bootstrap scrollspy (offset 51), navbar `affix` after 100px, closing the mobile menu on click, and WOW.js init. Elements with `wow <animation>` classes (from `animate.min.css`) animate on scroll.
 - `robots.txt`, `sitemap.xml`, `favicon.svg`: served from the site root.
+- `_config.yml`: GitHub Pages builds with Jekyll, which publishes every file in the repo, including Markdown converted to HTML. Add any non-site file (docs, notes) to its `exclude` list, or it will be served publicly.
+- `CNAME`: the custom domain for GitHub Pages. Don't delete it.
 
 ## Local SEO: keep these in sync
 
