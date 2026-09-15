@@ -214,7 +214,7 @@ header .header-content .header-content-inner p {
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 100vh;
     }
 
     header .header-content {
@@ -473,5 +473,116 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #222;
+    -webkit-tap-highlight-color: #222;
+}
+
+/* Hero: darken the storefront photo so the headline stays readable */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.55);
+}
+
+header .header-content {
+    z-index: 1;
+}
+
+header .header-content .header-content-inner h1 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+header .header-content .header-content-inner p {
+    color: rgba(255,255,255,.9);
+}
+
+header .header-content .header-content-inner .btn {
+    margin: 5px;
+}
+
+@media(min-width:768px) {
+    header .header-content .header-content-inner h1 {
+        font-size: 48px;
+    }
+}
+
+.bg-light {
+    background-color: #f7f7f7;
+}
+
+/* Featured jewelry */
+.product {
+    margin: 30px auto 0;
+    max-width: 650px;
+    background-color: #fff;
+}
+
+.product figcaption {
+    padding: 20px;
+    text-align: center;
+}
+
+.product figcaption h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.product figcaption p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #555;
+}
+
+/* FAQ */
+.faq-item h3 {
+    font-size: 20px;
+}
+
+/* Contact */
+#contact .contact-details {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact address,
+#contact p {
+    font-size: 18px;
+}
+
+.map-embed {
+    position: relative;
+    padding-bottom: 66%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media(min-width:992px) {
+    #contact .contact-details {
+        text-align: left;
+    }
+}
+
+.site-footer {
+    padding: 30px 0;
+    border-top: 1px solid #333;
+    color: #ccc;
+    background-color: #1a1a1a;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+    font-size: 14px;
 }

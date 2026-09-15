@@ -1,259 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Giia Jeweler - Jewelry store in St.Augustine, FL">
-    <meta name="keywords" content="St. Augustine Jewelry store, buy jewelry, jewelry, sell gold, sell jewelry, repair jewelry, buy gold, jewelry store in St. Augustine, jewelry store in Palm Coast, jewelry St.Augustine, Giia Jeweler, Giia Jewelry, watch repair, gold, diamonds, earrings, gold rings" />
-    <meta name="author" content="http://giiajewelry.com/">
-    <!-- Template made by http://startbootstrap.com -->
-    <title>Giia Jeweler - St.Augustine, FL jewelry store</title>
+    <title>Jewelry Store &amp; Repair in St. Augustine, FL | Giia Jeweler</title>
+    <meta name="description" content="Family-owned jewelry store on US-1 in St. Augustine, FL. Custom gold &amp; diamond jewelry, jewelry &amp; watch repair, watch batteries. We buy gold. (904) 217-8647">
+    <link rel="canonical" href="https://giiajewelry.com/">
+    <meta name="theme-color" content="#f05f40">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Local signals -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="St. Augustine">
+    <meta name="geo.position" content="29.8143547;-81.3235189">
+    <meta name="ICBM" content="29.8143547, -81.3235189">
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Giia Jeweler">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://giiajewelry.com/">
+    <meta property="og:title" content="Giia Jeweler | Jewelry Store &amp; Repair in St. Augustine, FL">
+    <meta property="og:description" content="Family-owned jewelry store on US-1 in St. Augustine. Custom jewelry, jewelry and watch repair, watch batteries, and we buy gold.">
+    <meta property="og:image" content="https://giiajewelry.com/img/header.jpg">
+    <meta property="og:image:width" content="1118">
+    <meta property="og:image:height" content="575">
+    <meta property="og:image:alt" content="Inside the Giia Jeweler showroom in St. Augustine, FL">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JewelryStore",
+        "@id": "https://giiajewelry.com/#store",
+        "name": "Giia Jeweler",
+        "description": "Family-owned jewelry store in St. Augustine, FL offering custom jewelry, jewelry repair, watch repair and battery replacement, and buying gold and broken jewelry.",
+        "url": "https://giiajewelry.com/",
+        "image": "https://giiajewelry.com/img/header.jpg",
+        "telephone": "+1-904-217-8647",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4213 US-1",
+            "addressLocality": "St. Augustine",
+            "addressRegion": "FL",
+            "postalCode": "32086",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 29.8143547,
+            "longitude": -81.3235189
+        },
+        "hasMap": "https://www.google.com/maps/place/Giia+Jeweler/@29.814505,-81.323455,17z/data=!3m1!4b1!4m2!3m1!1s0x88e69cc35c96bd13:0x31da78990b6603bc",
+        "areaServed": [
+            { "@type": "City", "name": "St. Augustine" },
+            { "@type": "City", "name": "St. Augustine Beach" },
+            { "@type": "City", "name": "Palm Coast" },
+            { "@type": "AdministrativeArea", "name": "St. Johns County" }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Jewelry services",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom jewelry" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jewelry repair" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Watch repair and battery replacement" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gold and broken jewelry buying" } }
+            ]
+        }
+    }
+    </script>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Merriweather:300,400,400italic,700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css">
 </head>
 
 <body id="page-top">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" aria-label="Main">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Top</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Giia Jeweler</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="main-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#services">Services</a></li>
+                    <li><a class="page-scroll" href="#portfolio">Jewelry</a></li>
+                    <li><a class="page-scroll" href="#faq">FAQ</a></li>
+                    <li><a class="page-scroll" href="#contact">Visit Us</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+    <main>
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1>Jewelry Store &amp; Repair in St.&nbsp;Augustine, FL</h1>
+                    <hr>
+                    <p>Giia Jeweler is a family-owned jeweler on US-1 in St. Augustine. We sell custom gold and diamond jewelry, repair jewelry and watches, replace watch batteries, and buy gold.</p>
+                    <a href="tel:+19042178647" class="btn btn-primary btn-xl">Call (904) 217-8647</a>
+                    <a href="#contact" class="btn btn-default btn-xl page-scroll">Get Directions</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Family owned and operated, Giia Jeweler provides high quality jewelries and various jewelry repair services. We also offer watch repair and battery replacement. Let our experienced and well-trained jewelers give you the service you deserve.</p>
-                    <a href="https://www.google.com/maps/place/Giia+Jeweler/@29.814505,-81.323455,17z/data=!3m1!4b1!4m2!3m1!1s0x88e69cc35c96bd13:0x31da78990b6603bc" class="btn btn-default btn-xl" target="_blank">Find us on Google Maps!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Services</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Jewelry</h3>
-                        <p class="text-muted">We're selling original custom made jewelry!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-wrench wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Repairs</h3>
-                        <p class="text-muted">Need jewelry or watch fixed fast? We're happy to help!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa fa-money wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Sell Gold</h3>
-                        <p class="text-muted">We're buying gold, and even old broken jewelry!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">Our products made with love <3</p>
+        <section class="bg-primary" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Your Family-Owned Jeweler in St.&nbsp;Augustine</h2>
+                        <hr class="light">
+                        <p class="text-faded">Family owned and operated, Giia Jeweler provides high-quality jewelry and a full range of jewelry repair services to St. Augustine and St. Johns County. We also offer watch repair and watch battery replacement. Let our experienced, well-trained jewelers give you the service you deserve.</p>
+                        <p class="text-faded">You'll find us at 4213 US-1 in St. Augustine, an easy drive from downtown, St. Augustine Beach, and Palm Coast.</p>
+                        <a href="https://www.google.com/maps/place/Giia+Jeweler/@29.814505,-81.323455,17z/data=!3m1!4b1!4m2!3m1!1s0x88e69cc35c96bd13:0x31da78990b6603bc" class="btn btn-default btn-xl" target="_blank" rel="noopener">Find Us on Google Maps</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Pearl Earrings
-                                </div>
-                                <div class="project-name">
-                                    Beautiful 14K yellow solid gold (9.7g) with pearl earrings. Pearl (white) size 15mm. Full diameter Gold/Pearl is 22mm.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Jewelry &amp; Watch Services in St.&nbsp;Augustine</h2>
+                        <hr class="primary">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Diamond Ring 1ct
-                                </div>
-                                <div class="project-name">
-                                    Beautiful 14k solid white gold ring with natural diamond (1ct). Weight 3.6gram
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa-solid fa-gem fa-4x wow bounceIn text-primary" aria-hidden="true"></i>
+                            <h3>Custom Jewelry</h3>
+                            <p class="text-muted">Original, custom-made gold and diamond jewelry, including rings, earrings, and pendants.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Emerald Ring
-                                </div>
-                                <div class="project-name">
-                                    Beautiful ring 14k solid yellow gold with natural Diamond Color G, Clarity SV1 - 0.38ct and Colombian emerald - 0.91ct
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa-solid fa-screwdriver-wrench fa-4x wow bounceIn text-primary" data-wow-delay=".1s" aria-hidden="true"></i>
+                            <h3>Jewelry Repair</h3>
+                            <p class="text-muted">Broken chain, loose stone, or worn ring? Bring it in and our jewelers will get it fixed fast.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Diamond Ring 1ct
-                                </div>
-                                <div class="project-name">
-                                    Beautiful 14k solid white gold ring with natural diamond (1ct). Weight 3.6gram
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa-solid fa-clock fa-4x wow bounceIn text-primary" data-wow-delay=".2s" aria-hidden="true"></i>
+                            <h3>Watch Repair &amp; Batteries</h3>
+                            <p class="text-muted">Watch repair and watch battery replacement, right here in St. Augustine.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Emerald Ring
-                                </div>
-                                <div class="project-name">
-                                    Beautiful ring 14k solid yellow gold with natural Diamond Color G, Clarity SV1 - 0.38ct and Colombian emerald - 0.91ct
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa-solid fa-coins fa-4x wow bounceIn text-primary" data-wow-delay=".3s" aria-hidden="true"></i>
+                            <h3>We Buy Gold</h3>
+                            <p class="text-muted">Sell your gold locally, including old, broken, or unwanted jewelry.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Pearl Earrings
-                                </div>
-                                <div class="project-name">
-                                    Beautiful 14K yellow solid gold (9.7g) with pearl earrings. Pearl (white) size 15mm. Full diameter Gold/Pearl is 22mm.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
+        <section class="bg-light" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Featured Jewelry</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <figure class="product">
+                            <img src="img/portfolio/14k-gold-pearl-earrings-st-augustine.jpg" class="img-responsive" width="650" height="350" loading="lazy" alt="14K yellow gold pearl earrings with twisted rope setting">
+                            <figcaption>
+                                <h3>Pearl Earrings</h3>
+                                <p>14K solid yellow gold (9.7 g) with white pearls. Pearl size 15 mm; full gold and pearl diameter 22 mm.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="product">
+                            <img src="img/portfolio/1ct-diamond-ring-14k-white-gold.jpg" class="img-responsive" width="650" height="350" loading="lazy" alt="Diamond ring in 14K white gold">
+                            <figcaption>
+                                <h3>Diamond Ring, 1 ct</h3>
+                                <p>14K solid white gold ring with a natural diamond (1 ct). Weight 3.6 g.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="product">
+                            <img src="img/portfolio/colombian-emerald-diamond-ring-14k-gold.jpg" class="img-responsive" width="650" height="351" loading="lazy" alt="Colombian emerald and diamond ring in 14K yellow gold">
+                            <figcaption>
+                                <h3>Emerald Ring</h3>
+                                <p>14K solid yellow gold with natural diamonds (color G, clarity SV1, 0.38 ct) and a Colombian emerald (0.91 ct).</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2 class="section-heading text-center">Frequently Asked Questions</h2>
+                        <hr class="primary">
+                        <div class="faq-item">
+                            <h3>Where is Giia Jeweler located?</h3>
+                            <p>We're at 4213 US-1, St. Augustine, FL 32086. Call <a href="tel:+19042178647">(904) 217-8647</a> if you need directions.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Do you repair jewelry and watches?</h3>
+                            <p>Yes. We repair jewelry and watches, and we replace watch batteries.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can I sell gold or broken jewelry in St. Augustine?</h3>
+                            <p>Yes. Giia Jeweler buys gold, including old and broken jewelry. Stop by the store or call ahead with questions.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Do you make custom jewelry?</h3>
+                            <p>Yes. We sell original, custom-made jewelry. Visit the store to see what's in stock or to talk about a piece.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Visit Our St.&nbsp;Augustine Jewelry Store</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 contact-details">
+                        <address>
+                            <strong>Giia Jeweler</strong><br>
+                            4213 US-1<br>
+                            St. Augustine, FL 32086
+                        </address>
+                        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+19042178647">(904) 217-8647</a></p>
+                        <!-- TODO: add store hours here and as "openingHoursSpecification" in the JSON-LD above once confirmed -->
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Giia+Jeweler+4213+US-1+St+Augustine+FL+32086" class="btn btn-primary btn-xl" target="_blank" rel="noopener">Get Directions</a>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="map-embed">
+                            <iframe src="https://www.google.com/maps?q=Giia+Jeweler,+4213+US-1,+St.+Augustine,+FL+32086&amp;output=embed" title="Map of Giia Jeweler, 4213 US-1, St. Augustine, FL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>(904)-217-8647</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">email@giiajewelry.com</a></p>
-                </div>
-            </div>
+            <p><strong>Giia Jeweler</strong> &middot; 4213 US-1, St. Augustine, FL 32086 &middot; <a href="tel:+19042178647">(904) 217-8647</a></p>
+            <p class="text-muted">Family-owned jewelry store serving St. Augustine, St. Augustine Beach, Palm Coast, and St. Johns County.</p>
         </div>
-    </section>
+    </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 </body>
 </html>
