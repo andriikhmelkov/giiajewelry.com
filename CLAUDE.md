@@ -34,7 +34,7 @@ The business name, address, and phone (NAP) appear in several places, and search
 
 Every page must keep exactly one `<h1>`, a unique `<title>` and meta description, and a self-referencing canonical. New pages need a sitemap entry and a link from the home page, or nothing will crawl them.
 
-The shop has one jeweler, with more than 30 years in the jewelry trade. Write in the singular ("our jeweler"), never "our jewelers" or anything implying a team of them.
+The shop has one jeweler, with more than 20 years of experience in the jewelry industry. Write in the singular ("our jeweler"), never "our jewelers" or anything implying a team of them.
 
 Claims on the landing pages are deliberately conservative (no prices, turnaround times, warranties, or certifications) because they were written without the owner confirming specifics. Do not add such claims without the owner's word.
 

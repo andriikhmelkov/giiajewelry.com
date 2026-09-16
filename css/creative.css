@@ -570,8 +570,19 @@ header .header-content .header-content-inner .btn {
 }
 
 @media(min-width:992px) {
+    /* Center the address and phone against the map, both axes */
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .contact-row > [class*=col-] {
+        float: none;
+    }
+
     #contact .contact-details {
-        text-align: left;
+        margin-bottom: 0;
     }
 }
 
