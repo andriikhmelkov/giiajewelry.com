@@ -17,6 +17,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 - `index.html`: all content. Sections are anchored by id (`#page-top`, `#about`, `#services`, `#portfolio`, `#faq`, `#contact`). Nav links use class `page-scroll` to get smooth scrolling.
 - `css/creative.css`: the theme, with site-specific additions appended at the bottom (hero overlay, product cards, FAQ, contact map, footer). The accent color `#f05f40` is hard-coded throughout. The hero background is `img/header.jpg`, set here, not in the HTML.
 - `js/creative.js`: smooth scroll, Bootstrap scrollspy (offset 51), navbar `affix` after 100px, closing the mobile menu on click, and WOW.js init. Elements with `wow <animation>` classes (from `animate.min.css`) animate on scroll.
+- Service and city landing pages, each a directory with an `index.html` so the URL is clean (`/jewelry-repair-st-augustine/`): `jewelry-repair-st-augustine`, `jewelry-repair-palm-coast`, `watch-repair-st-augustine`, `custom-jewelry-st-augustine`, `sell-gold-st-augustine`. They share one layout (solid navbar, `.page-hero`, breadcrumb, body, contact section, footer) but are plain static files; there is no template engine, so a layout change means editing each one.
 - `robots.txt`, `sitemap.xml`, `favicon.svg`: served from the site root.
 - `_config.yml`: GitHub Pages builds with Jekyll, which publishes every file in the repo, including Markdown converted to HTML. Add any non-site file (docs, notes) to its `exclude` list, or it will be served publicly.
 - `CNAME`: the custom domain for GitHub Pages. Don't delete it.
@@ -28,7 +29,14 @@ The business name, address, and phone (NAP) appear in several places, and search
 - `<title>`, meta description, `og:*` tags, and the `geo.*` / `ICBM` meta tags in `<head>`
 - the `JewelryStore` JSON-LD block in `<head>` (address, `geo`, `telephone`, `areaServed`)
 - the About paragraph, FAQ answers, Contact `<address>`, map and directions links, and the footer
-- `sitemap.xml` `lastmod`
+- `sitemap.xml` (`lastmod`, and a `<url>` entry for every page)
+- the contact section and footer of each landing page, plus its `Service` and `BreadcrumbList` JSON-LD
+
+Every page must keep exactly one `<h1>`, a unique `<title>` and meta description, and a self-referencing canonical. New pages need a sitemap entry and a link from the home page, or nothing will crawl them.
+
+The shop has one jeweler, with more than 30 years in the jewelry trade. Write in the singular ("our jeweler"), never "our jewelers" or anything implying a team of them.
+
+Claims on the landing pages are deliberately conservative (no prices, turnaround times, warranties, or certifications) because they were written without the owner confirming specifics. Do not add such claims without the owner's word.
 
 Store hours and a contact email are intentionally absent until they are confirmed. The domain has no MX records, so no `@giiajewelry.com` address works. A TODO comment in the Contact section marks where hours go.
 

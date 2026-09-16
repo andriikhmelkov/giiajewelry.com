@@ -586,3 +586,97 @@ header .header-content .header-content-inner .btn {
     margin-bottom: 5px;
     font-size: 14px;
 }
+/* Interior pages (service and city landing pages) */
+.navbar-solid {
+    border-color: rgba(34,34,34,.05);
+    background-color: #fff;
+}
+
+.page-hero {
+    padding: 110px 0 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #222;
+}
+
+.page-hero h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.25;
+    color: #C28900;
+}
+
+.page-hero .lead {
+    margin: 20px auto 30px;
+    max-width: 760px;
+    font-weight: 300;
+    color: rgba(255,255,255,.85);
+}
+
+.page-hero hr.primary {
+    margin: 25px auto;
+}
+
+.breadcrumb-bar {
+    padding: 12px 0;
+    font-size: 13px;
+    color: #777;
+    background-color: #f2f2f2;
+}
+
+.checklist {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.checklist li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.footer-links a {
+    font-size: 14px;
+}
+
+@media(min-width:768px) {
+    .navbar-default.navbar-solid {
+        border-color: rgba(34,34,34,.05);
+        background-color: #fff;
+    }
+
+    .navbar-default.navbar-solid .navbar-header .navbar-brand {
+        color: #f05f40;
+    }
+
+    .navbar-default.navbar-solid .nav > li>a,
+    .navbar-default.navbar-solid .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.navbar-solid .nav > li>a:hover,
+    .navbar-default.navbar-solid .nav>li>a:focus:hover {
+        color: #f05f40;
+    }
+
+    .page-hero {
+        padding: 150px 0 70px;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+    }
+}
